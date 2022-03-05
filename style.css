@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body , .container{
+    height: 100%;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 24px;
+    padding-bottom: 10px;
+}
+p {
+    font-size: 16px;
+    font-weight: 300;
+    color: hsl(215, 52%, 70%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-content {
+    padding: 22px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 316px;
+    height: 540px;
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0 0 10px 10px rgba(14, 20, 32, 0.5);
+}
+.card-img {
+     width: 272px;
+     height: 272px;
+     /* padding: 22px; */
+}
+.card-img > img {
+    border-radius: 10px;       
+}
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+.card-balance {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0 12px 0;
+}
+.balance {
+    display: flex;
+    align-items: center;
+}
+
+.balance span {
+    color: hsl(178, 100%, 50%);
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 6px;
+}
+.time-left span {
+    color: hsl(215, 52%, 70%);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 6px;
+}
+
+.balance > img, .time-left > img{
+    display: inline-block;
+}
+
+.time-left {
+    display: flex;
+    align-items: center;
+}
+
+hr { 
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 2px solid #2F415B;
+    border-radius: 50%;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.profile-img {
+    width: 32px;
+    height: 32px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.created-by p {
+    padding-left: 14px;
+}
+.created-by span {
+    color: white;
+}
