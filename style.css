@@ -28,12 +28,19 @@ img, picture, video, canvas, svg {
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
-
+/* my style starts from here */
 h1 {
     font-size: 20px;
     font-weight: 600;
     padding-top: 24px;
     padding-bottom: 10px;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+a:hover{
+    color: #00fff7;
 }
 p {
     font-size: 16px;
@@ -61,11 +68,42 @@ p {
 .card-img {
      width: 272px;
      height: 272px;
-     /* padding: 22px; */
+     position: relative;
 }
-.card-img > img {
+.card-img img {
     border-radius: 10px;       
 }
+.card-img img:hover {
+    opacity: .35;    
+}
+
+.card-img  a::after  {
+    content: '';
+    display: none;
+    position: absolute;
+    background-image: url('./images/icon-view.svg');
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    left: 112px;
+    top: 40%;
+    z-index: -1;
+}  
+
+.card-img a:hover:after {
+    display: block;
+}
+.card-img:hover {
+    background: #00fff7;
+    opacity: .9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 .card-text {
     display: flex;
     flex-direction: column;
@@ -81,7 +119,7 @@ p {
 }
 
 .balance span {
-    color: hsl(178, 100%, 50%);
+    color: #00fff7;
     font-size: 16px;
     font-weight: 600;
     padding-left: 6px;
@@ -93,7 +131,7 @@ p {
     padding-left: 6px;
 }
 
-.balance > img, .time-left > img{
+.balance img, .time-left img{
     display: inline-block;
 }
 
