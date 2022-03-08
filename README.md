@@ -28,8 +28,8 @@ Users should be able to:
 ![](./screenshots/Mobile-view.PNG)
 
 ### Links
-- Live Site URL: [Solution](https://crizalid12.github.io/NFT-preview-card-component/)
-- Solution URL: [Demo](https://github.com/crizalid12/NFT-preview-card-component)
+- Solution URL: [Solution](https://crizalid12.github.io/NFT-preview-card-component/)
+- Live Site URL: [Demo](https://github.com/crizalid12/NFT-preview-card-component)
 
 ### My process
 - Recreated the card in Figma
